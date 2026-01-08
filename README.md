@@ -42,39 +42,6 @@ Styling: CSS (minimal, responsive UI)
 
 
 
-📂 Project Structure
-
-read-aloud-mern/
-
-├── backend/
-
-│   ├── index.js
-
-│   └── package.json
-
-│
-└── frontend/
-
-    ├── src/
-    
-    │   ├── App.js
-    
-    │   └── components/
-    
-    │       └── ReadAloud.js
-    
-    └── package.json
-
-
-
-
-
-
-
-
-
-
-
 🚀 How to Run the Project Locally
 1️⃣ Clone the Repository
 git clone <github-repo-url>
