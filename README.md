@@ -40,17 +40,29 @@ Text-to-Speech: Browser Speech Synthesis API
 
 Styling: CSS (minimal, responsive UI)
 
+
+
 📂 Project Structure
+
 read-aloud-mern/
+
 ├── backend/
+
 │   ├── index.js
+
 │   └── package.json
+
 │
 └── frontend/
+
     ├── src/
+    
     │   ├── App.js
+    
     │   └── components/
+    
     │       └── ReadAloud.js
+    
     └── package.json
 
 
