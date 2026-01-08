@@ -1,19 +1,22 @@
-
-const express = require("express");
-const cors = require("cors");
-
+const express = require('express');
+const cors = require('cors');
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
-app.get("/api/question", (req, res) => {
-  res.json({
-    id: "RA_A_1360",
-    text: "Technology plays an important role in modern education by improving access to information and enhancing learning experiences."
-  });
+let history = [];
+
+// Save evaluation results
+app.post('/api/report', (req, res) => {
+    const report = req.body;
+    history.push(report);
+    res.json({ message: "Report saved!", report });
 });
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+// Get all past reports
+app.get('/api/history', (req, res) => {
+    res.json(history);
 });
+
+app.listen(5000, () => console.log("Backend running on port 5000"));
